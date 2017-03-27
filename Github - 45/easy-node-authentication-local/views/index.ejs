@@ -1,0 +1,147 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>45 Says</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Helvetica">
+	<meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=5.0">
+   <meta name="description" content="">
+   <meta name="author" content="">    
+   <link rel="shortcut icon" href="favicon.ico">  
+     <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Helvetica">
+    <style>
+      body {
+        font-family: 'Helvetica';
+        font-size: 10px;
+      }
+      ul { 
+   margin: 10px auto 0; 
+   padding: 0; 
+   display: table;
+   width: 415px;
+   text-align: center;
+}
+li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 1px 0;
+}
+a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  
+    display: inline-block;
+    padding: 5px 20px;
+    position: relative;
+}
+    a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: #000;
+    width: 0;
+}
+    a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+		body { padding-top:10px; }
+		body {background-color: F5F5F5;}
+		h1 {color: 4A4A4A;}
+		h1 {font-family: Courier New;}
+		h1 {font-weight: bold;}
+		h2 {font-family: Helvetica;}
+		h2 {font-style: italic;}
+		h2 {font-size: 12px}
+		p {color: 4A4A4A;}
+    .header1 {color: #FF596E}
+    .header2 {margin: -15px}
+    .headerIcon {font-size: 25px}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="contentContainer">
+	<div class="text-center">
+		<nav class="toplinks">
+			<ul class="singleLineNav">
+				<li class="lineNav"><a style="text-decoration: none;" href="http://45says.com">HOME</a></li>
+				<li class="lineNav"><a style="text-decoration: none;" href="https://github.com/rexmls/whitepaper" target="_blank">DONATE TO CHARITIES</a></li>
+				<li class="lineNav"><a style="text-decoration: none;" href="http://45says.com/RANDOM" target="_blank">RANDOM QUOTE</a></li>
+			</ul>
+		</nav>
+		<div class="text-center">
+		<h1>
+		<span class="header1">45</span>
+		<span class="header2">Says</span>
+		<span class="headerIcon"><i class="fa fa-file-text-o"></i> </span>
+		<img src="/images/speechIcon.png">
+		</h1> 
+		<div id="globalHeader">
+		<div class="text-center">			
+			<h2>The art of the word choice.</h2>
+		</div>
+<div id="border">
+            <textarea id='text'></textarea>
+        </div>
+        <button id="count">Count</button>
+        <div id="result">
+            Words: <span id="wordCount">0</span><br/>
+            Total Characters(including trails): <span id="totalChars">0</span><br/>
+            Characters (excluding trails): <span id="charCount">0</span><br/>
+            Characters (excluding all spaces): <span id="charCountNoSpace">0</span>
+        </div>
+        <a href="http://deepumohan.com/projects/word-count/">Word Count</a><br/>
+        <a href="http://www.w3.org/html/logo/">
+</a>
+</div>
+<script type="text/javascript">
+counter = function() {
+    var value = $('#text').val();
+
+    if (value.length == 0) {
+        $('#wordCount').html(0);
+        $('#totalChars').html(0);
+        $('#charCount').html(0);
+        $('#charCountNoSpace').html(0);
+        return;
+    }
+
+    var regex = /\s+/gi;
+    var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+    var totalChars = value.length;
+    var charCount = value.trim().length;
+    var charCountNoSpace = value.replace(regex, '').length;
+
+    $('#wordCount').html(wordCount);
+    $('#totalChars').html(totalChars);
+    $('#charCount').html(charCount);
+    $('#charCountNoSpace').html(charCountNoSpace);
+};
+
+$(document).ready(function() {
+    $('#count').click(counter);
+    $('#text').change(counter);
+    $('#text').keydown(counter);
+    $('#text').keypress(counter);
+    $('#text').keyup(counter);
+    $('#text').blur(counter);
+    $('#text').focus(counter);
+});</script>
+</body>
+</html>
