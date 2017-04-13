@@ -20,14 +20,14 @@
         href="https://fonts.googleapis.com/css?family=Helvetica">
     <style>
     /* Below adjusts the size of the nav font, like Home*/
-body {
+    body {
         font-family: 'Helvetica';
         font-size: 10px;
         }
         ul { 
     /* Below margin spacing above nav; Padding adjusts space to the left*/ 
     margin: 1px auto 0; 
-    padding: 100;
+    padding: 100; 
     display: table;
     width: 425px;
 }
@@ -65,27 +65,36 @@ body {
 		body {padding-top:10px;}
 		body {background-color: #F2F2F2;}
 		h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
-		h2 {font-family: Helvetica; font-style: italic; font-size: 12px;}
+		h2 {font-family: Helvetica; font-style: italic; font-size: 13px;}
         h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
-        h4 {color: #000; font-size: 11px;}
+
 
     .header1 {
         color: #FF596E;
-}
+    }
     .header2 {
         margin: -15px; color: #4A4A4A;
-}
+    }
     .singleLineNav {
-        vertical-align: middle;
-}
+        text-align:center;
+    }
+    .singleLineNav li {
+        display:inline;
+    }
+    .singleLineNav a {
+        text-decoration:none; 
+        padding:0 22px; /* variable width */
+    }
+
+    }
     .header3 {
         vertical-align:middle; 
         font-style: lighter; 
         color: #4A4A4A;
-}
+    }
     .header3:after {
         font-style: bold;
-}
+    }
     .header3:hover:after { 
         font-style: bold;
 }
@@ -93,15 +102,15 @@ body {
         vertical-align: middle;
         font-family: Helvetica-Bold;
         font-style: uppercase; 
-}
+    }
     /* Below changes the left padding of "A Log..." header */
     .padded-multiline {  
         margin: 30px auto;
 }
-    .padded-multiline h3 { 
+   .padded-multiline h3 { 
         display: inline; 
 }
-    .padded-multiline h3 strong { 
+   .padded-multiline h3 strong { 
         position: relative;
         box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
 }
@@ -114,43 +123,11 @@ body {
         height: 340px;
         width: 475px;
         left: 10;
-        position: absolute;
-        background: url(/images/rip.svg) bottom;
-        background-size: 100%;
+      position: absolute;
+      background: url(/images/rip.svg) bottom;
+      background-size: 100%;
 }
-</style>
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 </head>
-<body>
-<div class="container">
-        <ul class="singleLineNav">
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -5px;" href="home.html" id="home" target="_self">HOME</a></li>
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: 30px;" href="random.html" id="random" target="_self">RANDOM QUOTE</a></li>
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -9px;" href="donate.html" id="donate" target="_self">DONATE TO CHARITIES</a></li>
-        </ul>
-<div class="text-center">
-    <h1>
-    <span style="font-size: 36px"; class="header1">45</span>
-    <span style="font-size: 38px"; class="header2">Says</span>
-    <img style="margin-bottom: 5px" src="/images/speechIcon.png" width="19" height="25">
-</div>
-    </h1>
-<div id="globalHeader">
-<h2>
-<div class="text-center">       
-    <a style="margin-left: 20px; margin-top: -22px; text-decoration: none; color: #4A4A4A; letter-spacing: 0.0225em;" target="_blank" href="https://youtu.be/7UIE_MRAhEA?t=54s" class=header3>“I know words, I have the best words.” - Donald J. Trump </a>
-</h2>
-</div>
-    <div class="padded-multiline">
-    <h3 style="margin-left: 1%"><strong>A Record of the Most Beautiful Words</strong><br>
-    <h3 style="margin-left: 1%"><strong>Used By Our 45th President </strong></h3>
-</div>
-<main>
-    <article class="col-md-6">
-    </article>
-    <article class="col-md-6">
-    </article>
-</main>  
-</div>
-</body>
 </html>
