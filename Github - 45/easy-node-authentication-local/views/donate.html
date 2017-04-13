@@ -1,0 +1,189 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>45 Says</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Helvetica">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Helvetica">
+    <style>
+    /* Below adjusts the size of the nav font, like Home*/
+body {
+        font-family: 'Helvetica';
+        font-size: 10px;
+        }
+        ul { 
+    /* Below margin spacing above nav; Padding adjusts space to the left*/ 
+    margin: 1px auto 0; 
+    padding: 100; 
+    display: table;
+    width: 425px;
+}
+    li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 0px 0;
+}
+    a {
+    color: #4A4A4A;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+
+  /* Below adjusts spacing between navs */
+    display: inline-block;
+    padding: 3px 21px;
+    position: relative;
+}
+    a:after {    
+    bottom: 0;
+    color: #4A4A4A;
+    content: ""; 
+    display: block;
+    height: 1.6px;
+    position: absolute;
+    background: #FF596E;
+}
+/* Why doesn't this text-shadow work for after hover bold?*/
+    a:hover:after { 
+    /* text-shadow: 0.5px -0.5px 0px #4A4A4A; */
+    position: absolute;
+    width: 45%;
+    left: 26%;
+}
+        body {padding-top:10px;}
+        body {background-color: #F2F2F2;}
+        h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
+        h2 {font-family: Helvetica; font-style: italic; font-size: 12px;}
+        h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
+        h4 {color: #000; font-size: 12px;}
+        h5 {color: #000; font-size: 11px;}
+    
+    .header1 {
+        color: #FF596E;
+}
+    .header2 {
+        margin: -15px; color: #4A4A4A;
+}
+    .singleLineNav {
+        vertical-align: middle;
+}
+    .header3 {
+        vertical-align:middle; 
+        font-style: lighter; 
+        color: #4A4A4A;
+}
+    .header3:after {
+        font-style: bold;
+}
+    .header3:hover:after { 
+        font-style: bold;
+}
+    .header4 {
+        vertical-align: middle;
+        font-family: Helvetica-Bold;
+        font-style: uppercase;
+}
+    /* Below changes the left padding of "A Log..." header */
+    .padded-multiline {  
+        margin: 30px auto;
+}
+    .padded-multiline h3 { 
+        display: inline; 
+}
+    .padded-multiline h3 strong { 
+        position: relative;
+        box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
+}
+    article {
+        position: relative;
+}
+    article::after {
+        content: "";
+        top: 0px;
+        height: 273px;
+        width: 375px;
+        left: 5;
+        position: absolute;
+        background: url(/images/rip.svg) bottom;
+        background-size: 103%;
+        z-index: -1;
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+            <ul class="singleLineNav">
+                <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -5px;" href="home.html" id="home" target="_self">HOME</a></li>
+                <li><a style="text-decoration: none; color: #4A4A4A; margin-left: 30px;" href="random.html" id="random" target="_self">RANDOM QUOTE</a></li>
+                <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -9px;" href="donate.html" id="donate" target="_self">DONATE TO CHARITIES</a></li>
+            </ul>
+<div class="text-center">
+    <h1>
+    <span style="font-size: 36px"; class="header1">45</span>
+    <span style="font-size: 38px"; class="header2">Says</span>
+    <img style="margin-bottom: 5px" src="/images/speechIcon.png" width="19" height="25">
+</div>
+    </h1> 
+<div id="globalHeader">
+<h2>
+    <div class="text-center">       
+    <a style="margin-left: 20px; margin-top: -22px; text-decoration: none; color: #4A4A4A; letter-spacing: 0.0225em;" target="_blank" href="https://youtu.be/7UIE_MRAhEA?t=54s" class=header3>“I know words, I have the best words.” - Donald J. Trump </a>
+</h2>
+<div class="pull-right col-md-2">
+<div class="padded-multiline" style="margin-top: 50%;">
+        <h3 style="margin-left: -10px; font-size: 18px"><strong>How does it work?</strong></h3>
+</div>
+<div>
+    <p class="thicker" style="font-size: 14px; font-family: Helvetica-Bold; letter-spacing: 0.02em;">Click an organization's name to donate.</p>
+    <p class="lighter" style="letter-spacing: 0.001em; font-family: Courier New; font-size: 13px">This will take you directly to the site’s donation page, to ensure it goes to the right place.</p>
+    <p class="light">
+</div>
+</div>    
+<div class="padded-multiline">
+        <h3><strong>Donate to Tremendous<br>
+        Charitable Organizations </strong></h3>
+</div>
+</div>
+<main>
+<div class="row">
+        <article class="col-md-4 col-md-offset-0">
+            <h5 style="margin-left: 15px">ANIMALS<img style="margin-left: 32%" src="/images/dogIcon.svg"></h5>
+            <h4><strong style="font-family: Courier New; margin-left: 15px; letter-spacing: 0.02em";>ORGANIZATION</strong></h4> 
+            <h4><strong style="font-family: Courier New; margin-left: 18px; letter-spacing: 0.02em;">American Humane</strong></h4>
+            <h4 style= "font-family: Courier New; margin-left: 18px; margin-top: -4px">Founded in 1877, American Humane is committed to ensuring the safety, welfare and well-being of animals.</h4> 
+            <h4><strong style="font-family: Courier New; margin-left: 18px; letter-spacing: 0.02em;">Animal Welfare Institute</strong></h4>
+            <h4 style= "font-family: Courier New; margin-left: 18px; margin-top: -4px">Since 1951, the Animal Welfare Institute has been dedicated to reducing animal suffering caused by people.</h4> 
+            <h4><strong style="font-family: Courier New; margin-left: 18px; letter-spacing: 0.02em;">PetSmart Charities</strong></h4>
+            <h4 style= "font-family: Courier New; margin-left: 18px; margin-top: -4px">More than 400,000 dogs and cats find homes each year through their adoption programs.</h4>
+        </article>
+        <article class="col-md-4 col-md-offset-1">
+            <h5 style="margin-left: 15px">CIVIL RIGHTS & ADVOCACY<img style="margin-left: 4.85%" src="/images/gavelIcon.svg"></h5>
+        </article>
+</div>
+<hr>
+<div class="row">
+        <article class="col-md-4 col-md-offset-0">
+            <h5 style="margin-left: 15px">ENVIRONMENT<img style="margin-left: 23%" src="/images/treeIcon.svg"></h5>
+            </article>
+        <article class="col-md-4 col-md-offset-1">
+            <h5 style="margin-left: 15px">VETERANS & MILITARY<img style="margin-left: 12%" src="/images/starIcon.svg"></h5>
+        </article>
+</div>
+</main>
+</div>
+</body>
+</html>
