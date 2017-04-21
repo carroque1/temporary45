@@ -67,6 +67,7 @@ body {
 		h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
 		h2 {font-family: Helvetica; font-style: italic; font-size: 12px;}
         h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
+        h4 {color: #4A4A4A; font-size: 30px; font-family: Courier New; font-weight: normal;}
 
     .header1 {
         color: #FF596E;
@@ -95,8 +96,8 @@ body {
 }
     /* Below changes the left padding of "A Log..." header */
     .padded-multiline {  
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 30px;
 }
     .padded-multiline h3 { 
         display: inline; 
@@ -108,17 +109,20 @@ body {
     article::after {
         content: "";
         top: 10px;
-        height: 450px;
-        width: 950px;
-        background: url(/images/randomQuote.svg) bottom;
+        height: 415px;
+        width: 960px;
+        background: url(/images/trumpSignature.svg) bottom;
         position: absolute;
-        background-size: 99.8%;
+        background-size: 100.5%;
         margin-left: -20px;
         margin-bottom: 10px;
         z-index: -1;
 }
+}
 </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="quotes.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -131,12 +135,12 @@ body {
     <h1>
     <span style="font-size: 36px"; class="header1">45</span>
     <span style="font-size: 38px"; class="header2">Says</span>
-    <img style="margin-bottom: 5px" src="/images/speechIcon.png" width="19" height="25">
+    <img style="margin-bottom: 5px" src="/images/speechIcon.svg" width="18" height="24">
 </div>
-    </h1>
+    </h1> 
 <div id="globalHeader">
 <h2>
-<div class="text-center">       
+    <div class="text-center">       
     <a style="margin-left: 20px; margin-top: -22px; text-decoration: none; color: #4A4A4A; letter-spacing: 0.0225em;" target="_blank" href="https://youtu.be/7UIE_MRAhEA?t=54s" class=header3>“I know words, I have the best words.” - Donald J. Trump </a>
 </h2>
 </div>
@@ -144,9 +148,15 @@ body {
     <h3><strong>A Very Nice Random Quote</strong><br>
 </div>
 <main>
-    <article style="margin-top: 10px"; class="col-md-10 col-md-offset-1">  
-        <h1 style="font-size: 15px; margin-left: 15px; margin-top: 30px">Press Briefing</h1>
-        <h2 style="font-family: Courier New; font-size: 13px; margin-top: -5px; margin-left: 15px">February 2017</h2>
+    <article style="max-width: 100%; height: auto" class="col-md-10 col-md-offset-1">  
+        <h1 style="font-size: 15px; margin-left: 15px; margin-top: 30px" id="quoteType"></h1>
+        <!--Quote types disaply here-->
+        <!--<h1 style="font-size: 15px; margin-left: 15px; margin-top: 30px">Press Briefing</h1>-->
+        <h2 style="font-family: Courier New; font-size: 13px; margin-top: -5px; margin-left: 15px" id="year"></h2>
+        <!--<h2 style="font-family: Courier New; font-size: 13px; margin-top: -5px; margin-left: 15px">February 2017</h2>-->
+        <h4 style="padding: 50px; vertical-align: middle"; id="quoteDisplay"></h4>
+        <!--Quotes display here-->
+        </id>
     </article>
 </main>  
 </body>
