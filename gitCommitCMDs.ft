@@ -1,12 +1,12 @@
 once tested:
 
 sudo git add -A (all of the files I changed) 
-sudo git commit -m (commit notes)
+sudo git commit -m "message" (commit notes)
 sudo git push origin carlos 
 
 **go to github** - Accept all changes
 
-sudo git push origin master (after merging updates to github)
+sudo git pull origin master (after merging updates to github)
 
 
 ___
