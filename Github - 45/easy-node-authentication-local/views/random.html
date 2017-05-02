@@ -1,4 +1,3 @@
-<!-- views/index.ejs -->
 <!doctype html>
 <html>
 <head>
@@ -8,8 +7,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Courier">
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Helvetica">
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=5.0">
@@ -18,145 +15,105 @@
     <link rel="shortcut icon" href="favicon.ico">  
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Helvetica">
+    
     <style>
-    /* Below adjusts the size of the nav font, like Home*/
-body {
-        font-family: 'Helvetica';
-        font-size: 10px;
-        }
-        ul { 
-    /* Below margin spacing above nav; Padding adjusts space to the left*/ 
-    margin: 1px auto 0; 
-    padding: 100; 
-    display: table;
-    width: 425px;
-}
-    li { 
-    display: table-cell; 
-    position: relative; 
-    padding: 0px 0;
-}
-    a {
-    color: #4A4A4A;
-    text-decoration: none;
-    letter-spacing: 0.04em;
+    h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
+    h2 {font-family: Helvetica; font-size: 12px;}        
+    h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
+    h4 {color: #000; font-size: 11px;}
 
-  /* Below adjusts spacing between navs */
-    display: inline-block;
-    padding: 3px 21px;
-    position: relative;
-}
-    a:after {    
-    bottom: 0;
-    color: #4A4A4A;
-    content: ""; 
-    display: block;
-    height: 1.6px;
-    position: absolute;
-    background: #FF596E;
-}
-/* Why doesn't this text-shadow work for after hover bold?*/
-    a:hover:after { 
-    /* text-shadow: 0.5px -0.5px 0px #4A4A4A; */
-    position: absolute;
-    width: 45%;
-    left: 26%;
-}
-		body {padding-top:10px;}
-		body {background-color: #F2F2F2;}
-		h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
-		h2 {font-family: Helvetica; font-style: italic; font-size: 12px;}
-        h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
-        h4 {color: #4A4A4A; font-size: 30px; font-family: Courier New; font-weight: normal;}
-
-    .header1 {
-        color: #FF596E;
-}
-    .header2 {
-        margin: -15px; color: #4A4A4A;
-}
-    .singleLineNav {
-        vertical-align: middle;
-}
-    .header3 {
-        vertical-align:middle; 
-        font-style: lighter; 
-        color: #4A4A4A;
-}
-    .header3:after {
-        font-style: bold;
-}
-    .header3:hover:after { 
-        font-style: bold;
-}
-    .header4 {
-        vertical-align: middle;
-        font-family: Helvetica-Bold;
-        font-style: uppercase; 
-}
-    /* Below changes the left padding of "A Log..." header */
-    .padded-multiline {  
-        margin-top: 25px;
-        margin-bottom: 30px;
-}
-    .padded-multiline h3 { 
-        display: inline; 
-}
-    .padded-multiline h3 strong { 
-        position: relative;
-        box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
-    }
     article::after {
         content: "";
         top: 10px;
         height: 415px;
         width: 960px;
-        background: url(/images/trumpSignature.svg) bottom;
+        background: url(/images/randomQuote.png) bottom;
         position: absolute;
         background-size: 100.5%;
-        margin-left: -20px;
-        margin-bottom: 10px;
         z-index: -1;
 }
+
+#container{
+    width:900px;
+    margin:50px auto;
+    padding: 20px;
+    width:90%;
+}
+    #source {
+    text-align: top;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: Courier New;
+}
+#quoteContainer{
+    width:100%;
+    margin:30px auto;
+    text-align: left;
+    height:100px;
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 26px;
+}
+#buttonContainer{
+    width: 100%;
+    text-align: center;
+}
+#quoteButton{
+    width:200px;
+    margin-top: 10px;
+    border:2px solid #46b8da;
+    color:#045;
+    font-family: inherit;
+    font-weight: bold;
+    padding:5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#quoteButton:hover{
+    cursor:pointer;
+    background:#09c;
+    color: #fff;    
+}
+#quoteButton:active{
+    cursor: pointer;
+}
+#quoteButton{
+    display: inline-block;
+}
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+    #quoteButton,#addNew{
+        display: block;
+    }
 }
 </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="quotes.js"></script>
+    <!--Below is importing nav across files-->
+    <script>
+    $.get("nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
 
 </head>
 <body>
-<div class="container">
-        <ul class="singleLineNav">
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -5px;" href="home.html" id="home" target="_self">HOME</a></li>
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: 30px;" href="random.html" id="random" target="_self">RANDOM QUOTE</a></li>
-            <li><a style="text-decoration: none; color: #4A4A4A; margin-left: -9px;" href="donate.html" id="donate" target="_self">DONATE TO CHARITIES</a></li>
-        </ul>
-<div class="text-center">
-    <h1>
-    <span style="font-size: 36px"; class="header1">45</span>
-    <span style="font-size: 38px"; class="header2">Says</span>
-    <img style="margin-bottom: 5px" src="/images/speechIcon.svg" width="18" height="24">
+<div id="nav-placeholder">    
 </div>
-    </h1> 
-<div id="globalHeader">
-<h2>
-    <div class="text-center">       
-    <a style="margin-left: 20px; margin-top: -22px; text-decoration: none; color: #4A4A4A; letter-spacing: 0.0225em;" target="_blank" href="https://youtu.be/7UIE_MRAhEA?t=54s" class=header3>“I know words, I have the best words.” - Donald J. Trump </a>
-</h2>
-</div>
-    <div class="padded-multiline">
-    <h3><strong>A Very Nice Random Quote</strong><br>
+<div class="padded-multiline">
+    <h3 style="margin-left: 10%"><strong>A Very Nice Random Quote</strong><br>
 </div>
 <main>
-    <article style="max-width: 100%; height: auto" class="col-md-10 col-md-offset-1">  
-        <h1 style="font-size: 15px; margin-left: 15px; margin-top: 30px" id="quoteType"></h1>
-        <!--Quote types disaply here-->
-        <!--<h1 style="font-size: 15px; margin-left: 15px; margin-top: 30px">Press Briefing</h1>-->
-        <h2 style="font-family: Courier New; font-size: 13px; margin-top: -5px; margin-left: 15px" id="year"></h2>
-        <!--<h2 style="font-family: Courier New; font-size: 13px; margin-top: -5px; margin-left: 15px">February 2017</h2>-->
-        <h4 style="padding: 50px; vertical-align: middle"; id="quoteDisplay"></h4>
-        <!--Quotes display here-->
-        </id>
+    <article style="max-width: 100%; height: auto" class="col-md-10 col-md-offset-2">  
+            <div id="quoteContainer">
+            </div><!--end quoteContainer-->
+            <div id="buttonContainer">
+                <a href="#" id="quoteButton">Quote</a>
+            </div><!--end buttonContainer-->
+    </div><!--end container-->        
     </article>
 </main>  
 </body>
