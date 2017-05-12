@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Courier">
 	<meta charset="utf-8">
@@ -18,10 +19,17 @@
         href="https://fonts.googleapis.com/css?family=Helvetica">
 
     <style>
-	h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
-	h2 {font-family: Helvetica; font-size: 12px;}        
-    h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
+	h1 {font-family: Courier New; font-weight: bold;}
+	h2 {font-family: Helvetica}        
+    h3 {font-size: 24px; line-height:26px; background-color: #FFFFFF;}
     h4 {color: #000; font-size: 11px;}
+    
+    body {
+        font-family: Courier New;
+        font-size: 13px;
+        color: #4A4A4A;
+        background-color: 
+}
 
     /* Below changes the left padding of "A Record..." header */
     .padded-multiline {  
@@ -33,6 +41,14 @@
     .padded-multiline h3 strong { 
         position: relative;
         box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
+}
+    #transcriptHeader{
+    width:100%;
+    text-align: left;
+    font-family: Courier;
+    font-size: 26px;
+    margin: 0 auto; 
+    float: none; 
 }
     article {
         position: relative;
@@ -46,6 +62,7 @@
         position: absolute;
         background: url(/images/rip.svg) bottom;
         background-size: 100%;
+        z-index: -1;
 }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
@@ -66,6 +83,12 @@
 </div>
 <main>
     <article style="margin-left: 11%"; class="col-md-6">
+         <div>
+         <div id="transcriptHeader">
+            <h2>Speech
+            </h2>
+        </div>
+        </div>
     </article>
     <article style="margin-left: 53%"; class="col-md-6">
     </article>

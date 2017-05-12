@@ -12,3 +12,4 @@ sudo git pull origin master (after merging updates to github)
 ___
 - ssh -i ~/Desktop/administrator-key-pair-uswest2.pem ec2-user@54.191.129.240
 - from EC2 you only pull
+- 
