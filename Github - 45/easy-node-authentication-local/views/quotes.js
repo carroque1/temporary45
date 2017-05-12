@@ -48,6 +48,26 @@ $(document).ready(function(){
 	    	quote:"I'm, like, a smart person.",
 	    	source:"Fox News, 2016"
 	    },
+	    {
+	    	quote:"[Being president] is more work than in my previous life. I thought it would be easier.",
+	    	source:"Fox News, 2016"
+	    },
+	    {
+	    	quote:"I think $10 billion or less [for the wall]. And if I do a super-duper, higher, better, better security, everything else, maybe it goes a little bit more.",
+	    	source: "Associated Press, 2016"
+	    },
+	    {
+	    	quote:"My fingers are long and beautiful, as, it has been well documented, are various other parts of my body.",
+	    	source: "New York Post, 2011"
+	    },
+	    {
+	    	quote:"You know what uranium is? This thing called nuclear weapons and other things, like lots of things are done with uranium, including some bad things.",
+	    	source: "Press Conference, 2017"
+	    },
+		{
+	    	quote:"I have a very good brain and I have said a lot of things.",
+	    	source: "MSNBC, 2016"
+	    },
 
 	];
 
@@ -70,7 +90,7 @@ $(document).ready(function(){
       //fade out animation with callback
       quoteContainer.fadeOut(timeAnimation, function(){
         quoteContainer.html('');
-				quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="source">'+'								'+newQuoteGenius+'</p>');
+				quoteContainer.append('<p id="source">'+newQuoteGenius+'<p>'+'</p>'+'<p>'+'								'+newQuoteText+'</p>');
         
         //fadein animation.
         quoteContainer.fadeIn(timeAnimation);

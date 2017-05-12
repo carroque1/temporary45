@@ -1,0 +1,196 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Stel temporary</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:200normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:300normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:400normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:700normal" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+
+    body{
+        font-family: Nunito,sans-serif;
+        font-weight: 300; 
+        font-size:18px;
+        line-height:1.5;
+        padding:3%;
+        background-color: #F2F2F2;
+        color: #4A4A4A;
+    }
+    html{
+        overflow-x:hidden;
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:28px;
+        font-weight: 700;
+    }
+    h3{
+        font-size:20px;
+        font-weight: 300;
+    }
+    h4{
+        font-size:20px;
+        font-weight: 700;
+    }
+    h5{
+        font-size:18px;
+        font-weight: 200; 
+        color:#9B9B9B;
+    }
+    hr{
+        border:0;border-top:1px solid #eee;margin:1% 0; margin-bottom: 2.5%;
+    }
+
+.button{
+    font-family: Nunito;
+    font-weight:200;
+    line-height:1.25;
+    letter-spacing: 1.1px;
+    width: 30%;
+    padding:22px;
+    font-size:25px;
+    border-radius:2px;
+    -webkit-transition:all .1s ease-in-out;
+    -o-transition:all .1s ease-in-out;
+    transition:all .1s ease-in-out;
+    text-align: center;
+}
+.button:focus,.button:hover{
+    text-decoration:none
+}
+.button-primary{color:#fff;background-color:#FF596E; margin: -80px;
+}
+.button-primary:hover{color:#fff;background-color:#C74353; text-decoration: none;}.button-primary.active,.button-primary:active,.show>{color:#fff;background-color:#FF596E;background-image:none;
+}
+.avatar {
+    background: url(/images/stel/carlos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #DCDCDC;
+    border-radius: 50%;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: .3%;
+}
+#patient-profile{
+    min-height: 30%;
+    margin-bottom: 1%;
+    margin-top: -2%;
+}
+
+</style>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-sm-12">
+        <div id="patient-profile">
+            <div style="height: 110px" class="card">
+                    <div class="avatar"></div>
+                        <div style="padding:1.3%; margin-left: 11%" class="container">
+                            <h1 style="position: relative; color:#4A4A4A; font-weight: 800;" class="card-title">Patient Name</h1>
+                            <h3 style="font-weight: 300; position: relative; color:#4A4A4A;" class="card-text">Born 1/1/1959</h3>
+                            <div style="position: relative; margin-left: 97%;" class="button button-primary">Contact Patient</div>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <h5 style="padding: 1%; margin-left: 1%" class="card-title">Summary of vitals since discharge</h5>
+        <div class="card">
+            <div style="padding: 1%; margin-left: 3%" class="card-block">
+                <br>
+                <h4 style="color:#4A4A4A" class="card-text">Discharge</h4>
+                    <p style="color:#9B9B9B"> Date
+                    </p>
+                <h4 style="color:#4A4A4A" class="card-text">Body Weight</h4>
+                    <p style="color:#9B9B9B"> Weight
+                    </p>
+                <h4 style="color:#4A4A4A" class="card-text">Blood Pressure</h4>
+                    <p style="color:#9B9B9B"> mm Hg
+                    </p>
+                <h4 style="color:#4A4A4A" class="card-text">Pulse Oximeter</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <h5 style="padding: .35%; margin-left: 1%" class="card-title">Most recent measurements</h5>
+        <div class="card">
+            <div style="margin-top: 1%; margin-left: 1%" class="card-block">
+                    <div>
+                        <h2 id="column">Blood Pressure</h2>
+                    </div>
+                    <hr>
+                            <div style="margin-left: 3%; padding: 2%;">
+                                <h2 style="font-size: 50px; margin-bottom: 2%">
+                                180 / 30 mm Hg
+                                </h2>
+                            </div>
+                    <div>
+                        <h2 style="margin-top: 3%">Body Weight</h2>
+                    </div>
+                    <hr>
+                            <div style="margin-left: 3%; padding: 2%;" class="row">
+                                <h2 style="font-size: 50px; margin-bottom: 2%">
+                                    <span style="font-weight: 800"> 170</span>
+                                    <span style="font-weight: 300">lbs /</span>&nbsp;
+                                <h2 style="font-size: 50px; margin-bottom: 2%">
+                                    <span style="font-weight: 800"> 77.1</span>
+                                    <span style="font-weight: 300">kg</span>    
+                                <div class="card-block">
+                                    <h5> Since last measure
+                                    </h5>
+                                </div>
+                            </div>
+                        <div style="margin-top: 3%">
+                            <h2 class="column1">Pulse Oximeter</h2>
+                        </div>
+                    <hr>
+                            <div style="margin-left: 3%; padding: 2%;">
+                                <h2 style="font-size: 50px; margin-bottom: 2%">
+                                80 mm Hg
+                                </h2>
+                                <h5> Since last measure
+                                </h5>
+                            </div>
+                        <!-- <ul>
+                              <li>List item one</li>
+                              <li>List item two</li>
+                              <li>List item three</li>
+                            </ul>
+                        -->
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+  </body>
+</html>
