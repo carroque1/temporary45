@@ -1,5 +1,7 @@
 // app/routes.js
+var moment = require('moment');
 module.exports = function(app, passport) {
+
 
 	// =====================================
 	// HOME PAGE (with login links) ========
@@ -51,6 +53,12 @@ module.exports = function(app, passport) {
 		res.render('profile.ejs', {
 			user : req.user // get the user out of session and pass to template
 		});
+	});
+		// =====================================
+	// TEST AUTO UPDATE PAGE ========
+	// =====================================
+	app.get('/something', function(req, res) {
+		res.render('something.ejs'); // load the something.ejs file
 	});
 
 	// =====================================

@@ -6,80 +6,107 @@
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Courier">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Courier">
     <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">    
     <link rel="shortcut icon" href="favicon.ico">  
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Helvetica">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="quotes.js"></script>
+    <!--<meta http-equiv="refresh" content="7">-->
     
     <style>
-    h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
-    h2 {font-family: Helvetica; font-size: 12px;}        
-    h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
-    h4 {color: #000; font-size: 11px;}
-
+    body {
+        font-family: 'Helvetica';
+        font-size: 12px;
+        background-color: #F2F2F2;
+}
+    h1 {
+        color: #4A4A4A; 
+        font-family: Courier New; 
+        font-weight: bold;
+}
+    h2 {    
+        font-family: Helvetica; 
+        font-size: 1em;
+}
+    h3 {
+        color: #4A4A4A; 
+        font-size: 18px; 
+        font-style: italic; 
+}
+    h4 {
+        font-size: 30px; 
+        line-height:26px; 
+        background-color: #FFFFFF;
+}
     article::after {
         content: "";
-        top: 10px;
-        height: 433px;
-        margin-left: 20px;
-        width: 95%;
+        top: 1px;
+        height: 100%;
+        margin-left: 2%;
+        width: 100%;
         background: url(/images/randomQuote.png);
         position: absolute;
         background-size: 100%;
         z-index: -1;
 }
-#source {
-    text-align: top;
-    font-weight: lighter;
-    font-size: 18px;
-    font-family: Courier New;
+    .padded-multiline {  
+        margin: 30px auto;
 }
-#quoteContainer{
-    width:100%;
-    height:100px;
-    margin:30px auto;
-    padding: 80px;
-    text-align: left;
-    font-family: Courier;
-    font-size: 26px;
-    margin: 0 auto; 
-    float: none; 
+    .padded-multiline h4 { 
+        display: inline; 
 }
-#buttonContainer{
-    width: 100%;
-    text-align: center;
+    .padded-multiline h4 strong { 
+        position: relative;
+        box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
 }
-#quoteButton{
-    width:160px;
-    margin-top: 16%;
-    color: #fff;
-    font-family: Helvetica;
-    background:#FF596E;
-    font-size: 12px;
-    font-weight: normal;
-    padding:15px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 2px;
+    #source {
+        text-align: top;
+        font-weight: lighter;
+        font-size: 18px;
+        font-family: Courier New;
 }
-
-#quoteButton:hover{
-    cursor:pointer;
-    background:#E35062;
-    color: #fff;    
-    font-weight: bold;
+    #quoteContainer{
+        width:100%;
+        height:130px;
+        text-align: left;
+        font-family: Courier;
+        font-size: 28px;
+        margin: 0 auto; 
+        float: none; 
 }
-#quoteButton:active{
-    cursor: pointer;
+    #buttonContainer{
+        width: 100%;
+        text-align: center;
 }
-#quoteButton{
-    display: inline-block;
+    #quoteButton{
+        width:160px;
+        margin-top: 12%;
+        color: #fff;
+        font-family: Helvetica;
+        background:#FF596E;
+        font-size: 13px;
+        font-weight: normal;
+        padding:12px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        display: inline-block;
+}
+    #quoteButton:hover{
+        cursor:pointer;
+        background:#E35062;
+        color: #fff;    
+        font-weight: bold;
+}
+    #quoteButton:active{
+        cursor: pointer;
 }
 
 /*MEDIA QUERIES*/
@@ -89,9 +116,6 @@
     }
 }
 </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="quotes.js"></script>
     <!--Below is importing nav across files-->
     <script>
     $.get("nav.html", function(data){
@@ -103,8 +127,10 @@
 <body>
 <div id="nav-placeholder">    
 </div>
-<div class="padded-multiline">
-    <h3 style="margin-left: 10%"><strong>A Very Nice Random Quote</strong><br>
+<div style="margin-left: 3.5%;" class="padded-multiline">
+    <h4 style="font-size:28px">
+    <strong>A Very Nice Random Quote</strong><br>
+    </h4>
 </div>
 <main>
     <article class="col-sm-10 col-sm-offset-1">  

@@ -19,6 +19,8 @@ var session      = require('express-session');
 var favicon = require('serve-favicon');
 var animate = require('animate');
 
+app.use('/moment', express.static(path.join(__dirname, 'node_modules/moment/src/moment.js')));
+
 //var configDB = require('./config/database.js');
 
 // configuration ===============================================================

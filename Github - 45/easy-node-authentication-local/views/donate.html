@@ -17,11 +17,30 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica">
     
     <style>
-    h1 {color: #4A4A4A; font-family: Courier New; font-weight: bold;}
-    h2 {font-family: Helvetica; font-size: 12px;}
-    h3 {color: #4A4A4A; font-size: 24px; line-height:26px; background-color: #FFFFFF;}
-    h4 {color: #000; font-family: Courier New;}
-    h5 {color: #4A4A4A; font-size: 12px; font-family: Courier New; font-weight: normal;}
+    body {
+        font-family: 'Helvetica';
+        font-size: 12px;
+        background-color: #F2F2F2;
+}
+    h1 {
+        color: #4A4A4A; 
+        font-family: Courier New; 
+        font-weight: bold;
+}
+    h2 {    
+        font-family: Helvetica; 
+        font-size: 15px;
+}
+    h3 {
+        color: #4A4A4A; 
+        font-size: 18px; 
+        font-style: italic; 
+}
+    h4 {
+        font-size: 30px; 
+        line-height:26px; 
+        background-color: #FFFFFF;
+}
 
     article {
         position: relative;
@@ -37,7 +56,18 @@
         background-size: 101%;
         z-index: -1;
 }
+    .padded-multiline {  
+        margin: 30px auto;
+}
+    .padded-multiline h4 { 
+        display: inline; 
+}
+    .padded-multiline h4 strong { 
+        position: relative;
+        box-shadow: -10px 0px 0px 0px #FFFFFF, 10px 0px 0px 0px #FFFFFF;
+}
     </style>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <!--Below is importing nav across files!-->
@@ -52,7 +82,7 @@
 
 <div class="pull-right col-md-2">
     <div class="padded-multiline" style="margin-top: 50%;">
-        <h3 style="margin-left: -10px; font-size: 20px"><strong>How does it work?</strong></h3>
+        <h4 style="margin-left: -10px; font-size: 20px"><strong>How does it work?</strong></h4>
     </div>
 <div>
     <p class="thicker" style="font-size: 14px; font-family: Helvetica-Bold; letter-spacing: 0.02em">Click an organization's name to donate.</p>
@@ -60,9 +90,10 @@
     <p class="light">
 </div>
 </div>    
-<div class="padded-multiline">
-        <h3 style="margin-left: 10%"><strong>Tremendous Charitable Organizations </strong></h3>
-</div>
+<div style="margin-left: 3.5%;" class="padded-multiline">
+    <h4 style="font-size:28px">
+    <strong>Tremendous Charitable Organizations</strong><br>
+    </h4>
 </div>
 
 <div class="row">
