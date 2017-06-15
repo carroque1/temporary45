@@ -197,35 +197,51 @@ $(document).ready(function(){
 	    	source: "Twitter, 2017"
 	    },
 	];
-		$('#quoteButton').click(function(evt){
-			//define the containers of the info we target
-			var quote = $('#quoteContainer p').text();
-			var source = $('#source').text();
 
-			//prevent browser's default action
-			evt.preventDefault();
-			//getting a new random number to attach to a quote and setting a limit
-			var sourceLength = quoteSource.length;
-			var randomNumber= Math.floor(Math.random()*sourceLength);
-			//set a new quote
-			for(i=0;i<=sourceLength;i+=1){
-			var newQuoteText = quoteSource[randomNumber].quote;
-			var newQuoteGenius = quoteSource[randomNumber].source;
-			//console.log(newQuoteText,newQuoteGenius);
-      var timeAnimation = 300;
-      var quoteContainer = $('#quoteContainer');
-      //fade out animation with callback
-      quoteContainer.fadeOut(timeAnimation, function(){
-        quoteContainer.html('');
-				quoteContainer.append('<p>'+'</p>'+'<p>'+'								'+newQuoteText+'</p>'+'<p id="source">'+newQuoteGenius);
-        
-        //fadein animation.
-        quoteContainer.fadeIn(timeAnimation);
-        //auto refresh div
-		update();
-        setInterval(update, 3000);
-      });  		
-			break;
+    var randomQuote = Math.floor(Math.random() * quoteSource.length);
+//$(function () {
+    //Set Original Quote
+    $('#quote').text(quoteSource[randomQuote].quote);
+    $('#source').text(quoteSource[randomQuote].source);      
+
+	$('#quoteButton').click(function(evt) {
+    evt.preventDefault();
+    
+	    var sourceLength = quoteSource.length;
+	    var randomNumber = Math.floor(Math.random() * sourceLength);
+
+    while (randomNumber === randomNumber){
+	    var newQuote = quoteSource[randomNumber].quote;
+	    var newSource = quoteSource[randomNumber].source;
+
+	    var timeAnimation = 375;
+	    var quoteContainer = $('#quoteContainer');
+    	//fade out animation with callback
+    quoteContainer.fadeOut(timeAnimation, function() {
+    quoteContainer.html('');
+	quoteContainer.append('<p>'+'</p>'+'<p>'+''+newQuote+'</p>'+'<p id="source">'+newSource);
+
+
+    	//fadein animation.
+   	quoteContainer.fadeIn(timeAnimation);
+    });
+
+    	var lastQuote = randomQuote;
+
+    $('#quoteButton').click(function(){
+    	var thisQuote = Math.floor(Math.random() * sourceLength);
+
+        //This will only be entered if the two are equal
+        //The while loop ensures that if you get a new random number
+        //it won't be the same
+    while(thisQuote == lastQuote){
+        thisQuote = Math.floor(Math.random() * sourceLength);
+        }
+
+        //If you make it here a unique number has been found
+        lastQuote = thisQuote; 
+        });   
+    break;
 		};//end for loop
 	
 	});//end quoteButton function
@@ -233,43 +249,4 @@ $(document).ready(function(){
 
 });//end document ready
 
-//auto refresh test
-                        var update = function () {
-                            
-                            var values = $(".task").map(function(){
 
-                                return $(this).val();
-
-                            }).get();
-
-                            for (i = 0; i < values.length; i++)  {   
-
-                                var div = $("<div>");
-
-                                var testing = moment(values[i], "YYYYMMDD hh:mm:ss a"); // 5 years ago
-                                var testingz = testing.clone().add(7, 'hour')
-                                testings = testingz.fromNow()
-                                div.text(testings);
-                                $('.testz'+[i]).html(div);
-
-                            }
-
-                            date = moment(new Date())
-                            datetime.html(date.format('ddd, MMMM Do YYYY, h:mm:ss a'));
-                            datetimeday.html(date.format('dd'));
-
-                        };
-
-                        $(document).ready(function(){
-                            //$('input').each(function(){    
-                            datetime = $('#datetime')
-                            datetimeAlt = $('#datetimeAlt')
-                            datetimeday = $('#datetimeday')
-                            
-                            testing = $('.testz')
-                            
-                            update();
-                            setInterval(update, 1000);
-                            //});
-                        //console.log(testz)
-                        });

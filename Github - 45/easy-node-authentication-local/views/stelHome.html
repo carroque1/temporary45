@@ -31,6 +31,7 @@
 </head>
 
 <body>
+<!--Start profile/header block-->
 <div style="height: 15%;" class="card">
         <div class="row card-block-profile">
                 <div class="col-sm-9">
@@ -53,6 +54,7 @@
                                 </div>
                             </div>
                 </div>
+<!--End profile/header block-->
                             
                         <!-- <div id="card-block-profile">
                             <h4 style="font-weight: 800; position: relative; color:#4A4A4A">Conditions</h4>
@@ -62,12 +64,12 @@
                             <h4 style="position: relative;">Example of comorbidity</h4>
                         </div>
                         -->
-                <!--<div class="col-sm-2">
+                <div class="col-sm-2">
                             <a href="#" class="button button-primary">Contact Patient</a>
-                </div>-->
+                </div>
         </div>
 </div>
-
+<!--Start summary view-->
 <div class="row">
     <div class="col-sm-3">
         <h4 style="color: #9B9B9B;" class="card-title">Summary of vitals since discharge</h4>
@@ -92,7 +94,8 @@
             </div>
         </div>
     </div>
-
+<!--End summary view-->
+<!--Start Most Recent/large measure view-->
     <div class="col-sm-9">
         <h4 style="color: #9B9B9B;" class="card-title">Most recent measurement</h4>
         <div style="height: 585px; width: 100%;" class="card">
@@ -165,8 +168,8 @@
         </div>
     </div>
 </div>
-
-
+<!--End Most Recent/large measure view-->
+<!--Start chart details-->
 <script type="text/javascript">
         Highcharts.chart('line-chart', {
             title: {
@@ -210,5 +213,6 @@
                 }]
 });
 </script>
+<!--End chart details-->
   </body>
 </html>
