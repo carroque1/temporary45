@@ -98,7 +98,7 @@ $(document).ready(function(){
 	    },
 	    {
 	    	quote:"\"Nobody has better toys than I do.\"",
-	    	source: "Campaign Rally, 2016"
+	    	source: "Campaign Rally (Staten Island, NY), 2016"
 	    },
 	    {
 	    	quote:"\"Hillary Clinton doesn't have the strength or stamina to be president. Jeb Bush is a low energy individual, but Hillary is not much better!\"",
@@ -110,7 +110,7 @@ $(document).ready(function(){
 	    },
 	    {
 	    	quote:"\"You know, if you’re a conservative Republican, if I were a liberal, if, like, OK, if I ran as a liberal Democrat, they would say I'm one of the smartest people anywhere in the world.\"",
-	    	source: "Sun City, South Carolina, 2015"
+	    	source: "Campaign Rally (Sun City, SC), 2015"
 	    },
 	    {
 	    	quote:"\"My uncle used to tell me about nuclear before nuclear was nuclear.\"",
@@ -134,7 +134,7 @@ $(document).ready(function(){
 	    },
 	    {
 	    	quote:"\"I know words, I have the best words.\"",
-	    	source: "Hilton Head Campaign Rally, 2015"
+	    	source: "Campaign Rally (Hilton Head, SC), 2015"
 	    },
 	    {
 	    	quote:"\"I don't repeat myself. I don't repeat myself.\"",
@@ -146,7 +146,7 @@ $(document).ready(function(){
 	    },
 	    {
 	    	quote:"\"Knock the crap out of him. I promise you I'll pay for the legal fees.\"",
-	    	source: "Campaign Rally, 2016"
+	    	source: "Campaign Rally , 2016"
 	    },
 	    {
 	    	quote:"\"I have the most loyal people. I could stand in the middle of 5th Avenue and shoot somebody and wouldn't lose any voters.\"",
@@ -196,6 +196,18 @@ $(document).ready(function(){
 	    	quote:"\"I am honered to serve you, the great American People.\"",
 	    	source: "Twitter, 2017"
 	    },
+	    {
+	    	quote:"\"I am being investigated for firing the FBI Director by the man who told me to fire the FBI Director! Witch Hunt.\"",
+	    	source: "Twitter, 2017"
+	    },
+	   	{
+	    	quote:"\"Are you allowed to impeach a president for gross incompetence?\"",
+	    	source: "Twitter, 2014"
+	    },
+	  	{
+	    	quote:"\"Wikileaks! I love Wikileaks.\"",
+	    	source: "Campaign Rally (Wilkes Barre, PA), 2016"
+	    },
 	];
 
     var randomQuote = Math.floor(Math.random() * quoteSource.length);
@@ -204,7 +216,7 @@ $(document).ready(function(){
     $('#quote').text(quoteSource[randomQuote].quote);
     $('#source').text(quoteSource[randomQuote].source);      
 
-	$('#quoteButton').click(function(evt) {
+	$('#button-primary').click(function(evt) {
     evt.preventDefault();
     
 	    var sourceLength = quoteSource.length;
@@ -228,7 +240,7 @@ $(document).ready(function(){
 
     	var lastQuote = randomQuote;
 
-    $('#quoteButton').click(function(){
+    $('#button-primary').click(function(){
     	var thisQuote = Math.floor(Math.random() * sourceLength);
 
         //This will only be entered if the two are equal
@@ -244,7 +256,7 @@ $(document).ready(function(){
     break;
 		};//end for loop
 	
-	});//end quoteButton function
+	});//end button function
            
 
 });//end document ready
