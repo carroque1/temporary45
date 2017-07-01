@@ -80,7 +80,7 @@
         position: relative;
 }
     #strikeout::after {
-        border-bottom: 0.4em solid black;
+        border-bottom: 0.45em solid black;
         content: "";
         left: 0;
         position: absolute;
@@ -157,8 +157,6 @@
         background: #FF596E;
         text-decoration: none;
         margin: .5em 0 0 0;
-
-
 }
     .btn:hover {
         background: #FE8A99;
