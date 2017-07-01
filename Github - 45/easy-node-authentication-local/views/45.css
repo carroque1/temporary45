@@ -126,12 +126,6 @@
         border: 0;
         background-repeat: no-repeat;
 }
-    #signature{
-        background: url(/images/signature.png);
-        width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-}
     #quote-box{
         width: 57vw;
         height: 9rem;
