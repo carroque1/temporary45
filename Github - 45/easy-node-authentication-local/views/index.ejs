@@ -14,166 +14,87 @@
     <meta name="author" content="">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link rel="stylesheet" href="45.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:200normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:300normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:400normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:600normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:700normal" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="quotes.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
-
-    <!--Below is importing nav across files!
-    <script>
-    $.get("navigation.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
-    });
-    </script>-->
 </head>
 
 <body>
     <div class="row">
-    <div class="col-md-12 sticky-nav-container">
+    <!--<div class="col-sm-12 sticky-nav-container">
         <h6 style="text-align: center;">
             <a href="#">HOME</a>
-            <a style="margin-left: 2%;" href="/donate.html">CHARITIES</a>
+            <a style="margin-left: 2%;" href="/charities.html">CHARITIES</a>
         </h6>
-    </div>
-    <div class="col-md-12">
+    </div>-->
+    <div class="col-sm-12">
         <h1 style="text-align: center">
             <span style="font-family: Courier New; font-weight: 700; color: #FF596E">45</span>
-            <span style="font-family: Courier New; font-weight: 700; margin-left: -.2%;">Says</span>
-            <img style="margin-bottom: .2%; margin-left: -.2%" src="/images/speechIcon.svg" width="30" height="40">
+            <span style="font-family: Courier New; font-weight: 700; margin-left: -.2%;">Says</span><br>
+            <img src="/images/signature.svg" alt="Donald Trump" style="height: 40px; width: 80px; margin-left: 200px; margin-top: -2%;">
+            <!--<img style="margin-bottom: .2%; margin-left: -.2%" src="/images/speechIcon.svg" width="30" height="40">-->
         </h1>
     </div>
 </div>
-<!--        <small>
-            <div id="datetime" class="" style="font-size: 12px; color: rgba(0, 0, 0, 0.4); font-weight: 100; margin-top: 10px; padding: 5px;">is there few </div>
-        </small>
-        <h1>
-            <script>
-            var now = moment().format(); 
-            var datetime = $('#datetime')
-            </script>
-            </h1>
-    <div>
--->
 <div class="row">
-    <div class="col-md-12 sticky-nav-container">
-        <div style="margin-top: 1.5%;" id="quoteContainer">
-            <p><span id="quote"></span><br/></p>
-            <span id="source"> </span>          
-<!--Temporary opacity 0 until auto refresh
-            <div style="opacity: 0; margin-top:-1%;">
-                <a href="#" class="button button-primary">Quote</a>
-            </div><!--end buttonContainer-->
+    <div class="col-sm-12">
+
+        <div style="margin-top: 1.5%;" id="quote-box">
+            <h4 style="margin: 0"><span id="quote"></span><br/></h4>
+            <div style="margin: 8px 5px 0 0; float: right; display: inline-block;">
+                <span id="source"></span><br>
+            </div>    
         </div>
     </div><!--end container-->   
 </div>
 
 <div class="padded-multiline">
-    <h2><span style="margin-left: 1.5%; box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.35);">
+    <h2><span style="margin-left: 1.5%; box-shadow: 1px 1px 2px -1px rgba(0,0,0,0.35);">
         <span style="padding: 0; " id="strikeout">Very, Very Nice</span> Words <br> Speeches, and Interviews
         </span>
     </h2>
 </div>
-<div style="margin-top: -2.5%;" class="card">
-        <div class="row">
-            <div class="col-sm-8">
+<div style="margin-bottom: 0;" class="col-sm-12 card">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="transcript">
                 <div style="display: inline-block; padding: 2%; margin-top: 4%; margin-left: 2%;">
-                    <h5 style="font-family: Courier New; font-weight: 600;">JOINT SESSION
-                    </h5>
-                    <h5 style="font-family: Courier New; font-weight: 200;">MAR 2017
-                    </h5>
-                    <div style="display: inline-block; margin-top: 2%;">
-                        <h5 style="font-family: Courier New; font-weight: 600;">TRANSCRIPT
-                        </h5>
-                        <div class="transcript">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Very</mark> phasellus commodo dapibus commodo. Phasellus blandit, eros sed accumsan sagittis, leo ante mattis diam, non pellentesque massa ex eu metus. Vestibulum et volutpat neque. Duis dictum est vitae purus ultricies, sit <mark>very</mark> amet ornare ante accumsan. Pellentesque <mark>very</mark> dictum odio eget quam laoreet, ac volutpat purus vestibulum. Nullam mi felis, ultricies quis velit ut, rhoncus commodo ligula.
+                            <h6 style="font-family: Helvetica; font-weight: 600;">JOINT SESSION
+                            </h6>
+                            <h5 style="font-weight: 200;">February 2017
+                            </h5>
+                        <div style="display: inline-block; margin-top: 2%;">
+                            <h6 style="font-family: Helvetica; font-weight: 600;">TRANSCRIPT
+                            </h6>
+                            <h5 style="width: 90%">
+                            THE PRESIDENT:  Nice to see you.  And just a few notes.  During this month, we honor the tremendous history of the African Americans throughout our country -- throughout the world, if you really think about it, right?  And their story is one of unimaginable sacrifice, hard work and faith in America. <br><br>
+
+                            I’ve gotten a real glimpse -- during the campaign, I’d go around with Ben to a lot of different places that I wasn’t so familiar with.  They’re incredible people.
+                            </h5>
                         </div>
-                    </div>
-                        <div>
-                            <a href="#" class="button button-primary">FULL TRANSCRIPT</a>
-                        </div><!--end buttonContainer-->
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div style="display: inline-block; padding: 2%; margin-top: 4%; width: 100%; margin-top: 45px; margin-left: 20px;">
-                    <h5 style="font-family: Courier New; font-weight: 600;">MOST COMMON
-                    </h5>
-                    <h3 style="font-family: Courier New; font-weight: 200;">Very(10), Best (5)
-                    </h3>
+            <div class="col-sm-12 text-center"> 
+            <button a href="#" class="btn">Full Transcript</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div style="display: inline-block; padding: 2%; width: 100%; margin-top: 35px;">
+                <h6 style="font-family: Helvetica; font-weight: 600;">MOST COMMON
+                </h6>
+                <h4 style="font-family: Courier New; font-weight: 200;">Very(10), Best (5)
+                </h4>
             </div>
         </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="col-sm-6">
-        <div style="display: inline-block; padding: 7%;">
-            <h4 style="font-family: Courier New; font-weight: 600;">Joint Session
-            </h4>
-            <h5 style="font-family: Courier New; font-weight: 200;">MAR 2017
-            </h5>
-        </div>
-    </div>
-    <div class="col-sm-6">
-    </div>
-</div>
-    
-<!--
-<main>
-    <article style="margin-left: 5rem"; class="col-md-4">
-    </article>
-</main>  
--->
+</div>  
 </body>
-<script>
-
-                        var update = function () {
-                            
-                            var values = $(".task").map(function(){
-
-                                return $(this).val();
-
-                            }).get();
-
-                            for (i = 0; i < values.length; i++)  {   
-
-                                var div = $("<div>");
-
-                                var testing = moment(values[i], "YYYYMMDD hh:mm:ss a"); // 5 years ago
-                                var testingz = testing.clone().add(7, 'hour')
-                                testings = testingz.fromNow()
-                                div.text(testings);
-                                $('.testz'+[i]).html(div);
-
-                            }
-
-                            date = moment(new Date())
-                            datetime.html(date.format('ddd, MMMM Do YYYY, h:mm:ss a'));
-                            datetimeday.html(date.format('dd'));
-
-                        };
-
-                        $(document).ready(function(){
-                            //$('input').each(function(){    
-                            datetime = $('#datetime')
-                            datetimeAlt = $('#datetimeAlt')
-                            datetimeday = $('#datetimeday')
-                            
-                            testing = $('.testz')
-                            
-                            update();
-                            setInterval(update, 1000);
-                            //});
-                        //console.log(testz)
-                        });
-
-</script>
-   <!--<script>
-        function autoRefresh_div()
-        {
-      $("#quoteContainer").load("#buttonContainer");// a function which will load data from other file after x seconds
-        }
-        setInterval('autoRefresh_div()', 5000); // refresh div after 5 secs
-    </script>-->
 </html>
