@@ -86,6 +86,7 @@
         position: absolute;
         top: 33%;
         width: 100%;
+        transform: skewY(-3.5deg) rotate(4deg)
 }
     #charityHeader{
         text-align: left;
@@ -124,6 +125,11 @@
         margin: auto 0;
         z-index: -1;
         border: 0;
+        background-repeat: no-repeat;
+}
+    #signature{
+        background: url(/images/signature.svg);
+        margin: 0 auto;
         background-repeat: no-repeat;
 }
     #quote-box{
