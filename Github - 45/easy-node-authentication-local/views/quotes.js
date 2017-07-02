@@ -25,7 +25,7 @@ var timerEnabled = true;
 	    	link: "https://www.youtube.com/watch?v=wtQeb7RHUC4"
 	    },
 	    {
-			quote: "\"@ariannahuff [Arianna Huffington] is unattractive, both inside and out. I fully understand why her former husband left her for a man - he made a good decision.\"",
+			quote: "\"Arianna Huffington is unattractive, both inside and out. I fully understand why her former husband left her for a man - he made a good decision.\"",
 			source:"Twitter, 2012",
 			link: "https://twitter.com/realdonaldtrump/status/240462265680289792?lang=en"
 	    },
@@ -130,11 +130,6 @@ var timerEnabled = true;
 	    	link: "http://abcnews.go.com/Politics/trump-bashes-cruz-wining-dining-delegates-toys/story?id=38467907"
 	    },
 	    {
-	    	quote:"\"Hillary Clinton doesn't have the strength or stamina to be president. Jeb Bush is a low energy individual, but Hillary is not much better!\"",
-	    	source: "Twitter, 2016",
-	    	link: "http://www.cnn.com/videos/politics/2016/09/26/clinton-trump-debate-hofstra-hillary-clinton-stamina-12.cnn"
-	    },
-	    {
 			quote:"\"It is a great honor to be here with all of my friends - so amazing and will never forget.\"",
 	    	source: "Yad Vashem Guestbook, Israeli Holocaust memorial, 2017",
 	    	link: "http://thehill.com/homenews/administration/334720-trump-marks-visit-to-holocaust-memorial-with-guestbook-message"
@@ -193,11 +188,6 @@ var timerEnabled = true;
 	    	quote:"\"I have the most loyal people. I could stand in the middle of 5th Avenue and shoot somebody and wouldn't lose any voters.\"",
 	    	source: "Campaign Rally (Sioux Center, IA), 2016",
 	    	link: "http://thehill.com/blogs/ballot-box/gop-primaries/266809-trump-i-could-shoot-people-in-streets-and-not-lose-support"
-	    },
-	    {
-	    	quote:"\"Obama just appointed an Ebola Czar with zero experience in the medical area and zero experience in infectious disease control. A TOTAL JOKE!\"",
-	    	source: "Twitter, 2014",
-	    	link: "https://twitter.com/realdonaldtrump/status/523237015329193984"
 	    },
 	    {
 	       	quote:"\"@BarackObama has a record low 39% Gallup approval rating. Why so high?\"",
@@ -348,6 +338,11 @@ var timerEnabled = true;
 			quote:"\"But regardless of recommendation, I was going to fire Comey knowing there was no good time to do it.\"",
 	    	source: "NBC Interview with Lester Holt, 2017",
 	    	link: "http://www.nbcnews.com/news/us-news/trump-reveals-he-asked-comey-whether-he-was-under-investigation-n757821"
+		},
+		{
+			quote:"\"This is infinity here. It could be infinity. We don’t really don’t know. But it could be. It has to be something — but it could be infinity, right?\"",
+	    	source: "Reinstatement of National Space Council, 2017",
+	    	link: "https://www.whitehouse.gov/the-press-office/2017/06/30/remarks-president-signing-executive-order-national-space-council"
 		},
 	];
 
