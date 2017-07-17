@@ -67,26 +67,27 @@
         font-weight: 700;
         line-height: 1.25em;
         color: #4A4A4A;
-        z-index: 0;
+        position: relative;
+        z-index: 3;
+ 
 }
     .padded-multiline h2 span { 
         background-color: #fff;
         padding: 0rem .25rem .2rem .5rem;
         -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
         font-weight: 800;
 }
     #strikeout {
         position: relative;
 }
     #strikeout::after {
-        border-bottom: 0.45em solid black;
+        border-bottom: 0.44em solid black;
         content: "";
         left: 0;
         position: absolute;
         top: 33%;
         width: 100%;
-        transform: skewY(-3.5deg) rotate(4deg)
+        transform: skewY(-3deg) rotate(4deg);
 }
     #charityHeader{
         text-align: left;
@@ -109,32 +110,32 @@
 }
     .card {
         content: "";
-        height: 325px;
-        width: 1100px;
-        z-index: -1;
+        height: 21rem;
+        width: 75rem;
+        position: relative;
         border-radius: 2px;
         margin: 0 auto; 
         margin-top: -2%;
         float: none; 
-        box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.25)
+        box-shadow: 1px 1px 3px -1px rgba(0,0,0,0.35)
 }
-    .rip {
-        background: url(/images/rip.svg);
-        height: 700px;
-        width: 150px;
-        margin: auto 0;
-        z-index: -1;
-        border: 0;
-        background-repeat: no-repeat;
+    .rip-footer{ 
+        background: url(/images/bottom.svg);
+        position:absolute;
+        bottom:0;
+        width:100%;
 }
     #signature{
         background: url(/images/signature.svg);
-        margin: 0 auto;
+        margin: 0 0 0 55%;
         background-repeat: no-repeat;
+        background-size: 80px;
+        height: 60px;
+        width: 105px;
 }
     #quote-box{
-        width: 60vw;
-        height: 9rem;
+        width: 74vw;
+        height: 7rem;
         font-family: Courier New;
         font-weight: 200;
         font-style: italic;
@@ -146,7 +147,7 @@
         font-family: Helvetica;
         font-style: normal;
         font-weight: 600;
-        float: right;
+        margin: 0 auto;
 }
     .btn{
         -webkit-border-radius: 2;
@@ -156,7 +157,6 @@
         color: #FFFFFF; 
         background: #FF596E;
         text-decoration: none;
-        margin: .5em 0 0 0;
 }
     .btn:hover {
         background: #FE8A99;

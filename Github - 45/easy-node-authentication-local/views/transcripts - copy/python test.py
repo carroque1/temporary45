@@ -2,9 +2,9 @@ import re
 import string
 
 frequency = {}
-document_text = open('02.01.17AAhistoryMonthSession.txt', 'r')
+document_text = open('beforeJapanMeeting.txt', 'r')
 text_string = document_text.read().lower()
-match_pattern = re.findall(r'\b[a-z]{3,15}\b', text_string)
+match_pattern = re.findall(r'\b[a-z]{3,18}\b', text_string)
  
 for word in match_pattern:
     count = frequency.get(word,0)
@@ -13,6 +13,4 @@ for word in match_pattern:
 frequency_list = frequency.keys()
  
 for words in frequency_list:
-    print words, frequency[words]
-
-frequency_list.sort(reverse=True)
+        print words, frequency[words]

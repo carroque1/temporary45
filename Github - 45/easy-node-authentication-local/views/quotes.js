@@ -4,11 +4,6 @@ var timerEnabled = true;
 
 //quote data
 		var quotes=[
-		{
-			quote: "\"It's freezing and snowing in New York  - we need global warming!\"",
-			source:"Twitter, 2012",
-			link: "https://twitter.com/realdonaldtrump/status/266259787405225984?lang=en"
-	    },
 	    {
 	    	quote:"\"I’ve said if Ivanka weren’t my daughter, perhaps I’d be dating her.\"",
 	    	source:"The View, 2006",
@@ -43,11 +38,6 @@ var timerEnabled = true;
 	    	quote:"\"@mplefty67: If Hillary Clinton can't satisfy her husband what makes her think she can satisfy America?\"",
 	    	source:"Twitter, 2015",
 	    	link: "https://twitter.com/Lennyjacobson/status/588867303908868096/photo/1"
-	    },
-	    {
-	    	quote:"\"If Obama attacks Syria and innocent civilians are hurt and killed, he and the U.S. will look very bad!\"",
-	    	source:"Twitter, 2013",
-	    	link: "https://twitter.com/realdonaldtrump/status/373527227935518720?lang=en"
 	    },
 	    {
 	    	quote:"\"Frederick Douglass is an example of somebody who’s done an amazing job and is getting recognized more and more, I notice.\"",
@@ -124,12 +114,7 @@ var timerEnabled = true;
 	    	source: "Campaign Rally (Atlanta, GA), 2016",
 	    	link: "https://www.youtube.com/watch?v=h7JYuVEAqEQ"
 	    },
-	    {
-	    	quote:"\"Nobody has better toys than I do.\"",
-	    	source: "Campaign Rally (Staten Island, NY), 2016",
-	    	link: "http://abcnews.go.com/Politics/trump-bashes-cruz-wining-dining-delegates-toys/story?id=38467907"
-	    },
-	    {
+	   	{
 			quote:"\"It is a great honor to be here with all of my friends - so amazing and will never forget.\"",
 	    	source: "Yad Vashem Guestbook, Israeli Holocaust memorial, 2017",
 	    	link: "http://thehill.com/homenews/administration/334720-trump-marks-visit-to-holocaust-memorial-with-guestbook-message"
@@ -266,7 +251,7 @@ var timerEnabled = true;
 	    },
 	   	{
 	    	quote:"\"The Panama Canal is doing quite well...and also, friendship with the president is very, very good.\"",
-	    	source: "Meeting with the Panamanian President, 2017",
+	    	source: "Meeting the Panamanian President, 2017",
 	    	link: ""
 	    },
 	  	{
@@ -344,6 +329,11 @@ var timerEnabled = true;
 	    	source: "Reinstatement of National Space Council, 2017",
 	    	link: "https://www.whitehouse.gov/the-press-office/2017/06/30/remarks-president-signing-executive-order-national-space-council"
 		},
+		{
+			quote:"\"I am going to give a major speech on, probably Monday of next week. And we're going to be discussing all of things that have taken place with the Clintons.\"",
+	    	source: "Primary Night Speech (Briarcliff Manor, NY), 2016",
+	    	link: "http://www.huffingtonpost.com/entry/trump-clinton-don-jr-russia_us_596562fee4b09b587d633d10"
+		},
 	];
 
 // Stores indices for used quotes
@@ -369,17 +359,18 @@ function printQuote() {
   document.getElementById('quote-box').innerHTML = "";
 
 var usedQuote = getRandomQuote();
+var timeAnimation = 500;
+
 
 var newHTML = '<h3 id="quote">' + usedQuote.quote +'</h3> <h3 id="source">' + usedQuote.source;
 if(usedQuote.citation !== undefined) {
     newHTML += '<span class="link">' + usedQuote.citation + '</span>';
   }
 
-  newHTML += '</h3>';
+newHTML += '</h3>';
   document.getElementById('quote-box').innerHTML = newHTML;
 
- }
-
+}
 
 
 
