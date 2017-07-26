@@ -2,7 +2,7 @@ import re
 import string
 
 frequency = {}
-document_text = open('AAhistoryMonthSession.txt', 'r')
+document_text = open('macronConferenceJuly17.txt', 'r')
 text_string = document_text.read().lower()
 match_pattern = re.findall(r'\b[a-z]{4,20}\b', text_string)
  

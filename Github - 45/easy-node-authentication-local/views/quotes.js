@@ -1,6 +1,7 @@
 window.onload=printQuote;
 var timer = window.setInterval(printQuote, 7500);
 var timerEnabled = true;
+$('.printQuote').fadeIn(1000);
 
 //quote data
 		var quotes=[
@@ -116,7 +117,7 @@ var timerEnabled = true;
 	    },
 	   	{
 			quote:"\"It is a great honor to be here with all of my friends - so amazing and will never forget.\"",
-	    	source: "Yad Vashem Guestbook, Israeli Holocaust memorial, 2017",
+	    	source: "Israeli Holocaust memorial, 2017",
 	    	link: "http://thehill.com/homenews/administration/334720-trump-marks-visit-to-holocaust-memorial-with-guestbook-message"
 	    },
 	    {
@@ -331,17 +332,22 @@ var timerEnabled = true;
 		},
 		{
 			quote:"\"I am going to give a major speech on, probably Monday of next week. And we're going to be discussing all of things that have taken place with the Clintons.\"",
-	    	source: "Primary Night Speech (Briarcliff Manor, NY), 2016",
+	    	source: "Primary Speech (Briarcliff Manor, NY), 2016",
 	    	link: "http://www.huffingtonpost.com/entry/trump-clinton-don-jr-russia_us_596562fee4b09b587d633d10"
 		},
+		{
+			quote:"\"Obama's complaints about Republicans stopping his agenda are BS since he had full control for two years. He can never take responsibility.\"",
+	    	source: "Twitter, 2012",
+	    	link: "https://twitter.com/realdonaldtrump/status/250975772083380226"
+		},
+
 	];
 
 // Stores indices for used quotes
 var usedQuotes = [];
 
-// returns a random quote
 function getRandomQuote() {
-  // select random quote from quotes array
+  // select random quote
   var randomIndex = Math.floor(Math.random() * quotes.length);
   if(usedQuotes.length === quotes.length) {
     usedQuotes = [];
@@ -354,13 +360,11 @@ function getRandomQuote() {
   // return the random quote
   return quotes[randomIndex];
 }
-// prints quote to page when user clicks "Show Another Quote"
+
 function printQuote() {
   document.getElementById('quote-box').innerHTML = "";
 
 var usedQuote = getRandomQuote();
-var timeAnimation = 500;
-
 
 var newHTML = '<h3 id="quote">' + usedQuote.quote +'</h3> <h3 id="source">' + usedQuote.source;
 if(usedQuote.citation !== undefined) {
@@ -369,6 +373,8 @@ if(usedQuote.citation !== undefined) {
 
 newHTML += '</h3>';
   document.getElementById('quote-box').innerHTML = newHTML;
+
+$('.printQuote').fadeOut(1000);
 
 }
 
