@@ -1,14 +1,13 @@
     body {
-        font-size: 14px;
+        font-size: 18px;
         color: #4A4A4A;
-        background-color: #FBFBFB;
-        
-        font-family: Helvetica;
+        background-color: #FEFEFE;
+        font-family: 'Cormorant Garamond', serif; 
         line-height: 1.1;
 }    
     h1 {
-        font-size: 3.5em;
-        font-size: 3.5vw;
+        font-size: 2.5em;
+        font-size: 2.5vw;
         margin-bottom: 0;
 }
     h2 {
@@ -21,17 +20,17 @@
 }
     h4 {
         font-size: 1.5em;
-        font-size: 1.4vw;        
+        font-size: 1.3vw;        
 }
     h5 {
-        font-size: 1.25em;
-        font-size: 1vw;
-        font-weight: 200;
-        margin-bottom: 0;
+        font-family: Helvetica;
+        font-size: 1.3em;
+        font-size: .85vw;
+        color: #D6D6D6;
 }
     h6 {  
-        font-size: 1.1em;
-        font-size: .75vw;
+        font-size: 1.3em;
+        font-size: .95vw;
 }
     a {
         display:inline-grid;
@@ -41,6 +40,7 @@
     a:hover {
         color:#FF596E;
         text-decoration: none;
+        cursor: pointer;
 }
     a:active {
         color:#FF596E;
@@ -48,15 +48,16 @@
 }
     hr {
         display: block;
+        color: #9B9B9B;
         height: 1px;
-        width: 90%;
-        border: 0;
-        border-top: 1px solid #F0F0F0;
-        margin: .75em 0 0 0;
-        padding: 0;
+        width: 95%;
+        border-top: 3px double #9B9B9B;
+        margin: 0;
+        padding: 1%;
 }
     mark {
-        background-color: yellow;
+        background-color: #FFED0B;
+        transform: skewY(-5deg) rotate(4deg);
 }
     nav {
         display: inline;
@@ -66,32 +67,30 @@
         margin-bottom: 0;
 }
     .btn {
-        -webkit-border-radius: 2;
-        
-        border-radius: 2px;
-        font-family: Helvetica;
-        color: #FFFFFF; 
-        background: #FF596E;
+        font-family: 'Cormorant Garamond';
+        color: #9B9B9B;
+        background: none;
         text-decoration: none;
+        padding: 1%;
 }
     .btn:hover {
-        background: #FE8A99;
         text-decoration: none;
+        cursor: pointer;
 }
-    #charityHeader{
+    #charity-header{
         text-align: left;
-        padding: 20px 0 0px 0;
+        padding: 3% 0 0 0;
 }
-    #charityName{
-        font-family: Helvetica;
+    #charity-name{
+        font-family: 'Helvetica';
         font-size: 1.1vw; 
         line-height: 1.1em;
         word-spacing: .5px;
         margin: 20px 0 0 0;
         text-transform: uppercase;
 }
-    #charityInfo{
-        font-family: Courier New;
+    #charity-info{
+        font-family: 'Courier New';
         font-size: 1.1vw; 
         line-height: 1.1em;
         word-spacing: .5px;
@@ -99,49 +98,60 @@
 }
     .card {
         content: "";
-        height: 21rem;
-        width: 75rem;
+        height: 22rem;
+        width: 50rem;
         position: relative;
         border-radius: 2px;
-        margin: 0 auto; 
-        margin-top: -2%;
+        background: #FFFBF6;
+        vertical-align: left;
+        margin-top: 2%;
         float: none; 
-        box-shadow: 1px 1px 3px -1px rgba(0,0,0,0.35)
+        box-shadow: 1px 2px 3px -1px rgba(0,0,0,0.35);
 }
     #date {
-        font-family: Courier New; 
+        font-family: 'Cormorant Garamond', serif; 
         font-weight: 200;
+        color: #9B9B9B;
+        text-align: center;
         text-transform: uppercase;
-        margin-bottom: 1.5%;
+        margin-bottom: 3%;
 }
     .ellipsis {
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 9;
+        -webkit-line-clamp: 7;
         -webkit-box-orient: vertical;
 }
     /* Below changes the left padding of "A Record..." header */
     .padded-multiline h2 {
         font-weight: 700;
-        line-height: 1.25em;
+        line-height: 1.1em;
+        font-family: Helvetica;
         color: #4A4A4A;
         position: relative;
         z-index: 3;
+        transform: skewY(-4deg) skewX(4deg) rotate(2deg);
+
 }
     .padded-multiline h2 span { 
         background-color: #fff;
-        padding: 0rem .25rem .2rem .5rem;
+        padding: .25rem .25rem .2rem .5rem;
         -webkit-box-decoration-break: clone;
         font-weight: 800;
+
 }
     #quote-box {
-        width: 68vw;
+        width: 60vw;
         height: 7rem;
-        font-family: Courier New;
-        font-weight: 200;
-        font-style: italic;
         text-align: center;
         margin: 0 auto; 
+        padding-top: 1%;
+}
+    #quote{
+        vertical-align: middle;
+        font-family: 'Georgia'; 
+        font-weight: 300;
+        font-style: italic;
 }
     .rip-footer { 
         background: url(/images/bottom.svg);
@@ -150,16 +160,25 @@
         width:100%;
 }
     #source {
-        font-size: 13px;
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: 600;
+        font-size: 11px;
+        font-family: 'Helvetica'; 
+        font-weight: 400;
         margin: 0 auto;
 }
-    .stats{
+    .stats-header{
+        font-family: 'Helvetica';
+        font-size: 12px; 
         display: inline-block;
         width: 100%; 
-        margin-top: 10%;
+        padding: 10%;
+}
+    .stats{
+        font-family: 'Helvetica';
+        font-size: 14px;
+        font-weight: medium;
+        display: inline-block;
+        width: 100%; 
+        padding: 10%;
 }
     #strikeout {
         position: relative;
@@ -173,47 +192,51 @@
         width: 100%;
         transform: skewY(-3deg) rotate(4deg);
 }
-    #transcriptHeader {
+    #transcript-header {
         text-transform: uppercase;
-        font-weight: 600;
-        font-family: Helvetica;
+        text-align: center;
+        font-weight: 700;
+        padding: 3% 0 0 0;
 }
     .transcript {
-        font-family: Courier New;
-        width: 90%;
+        font-family: 'Baskerville';
+        width: 92%;
         display: inline-block; 
-        padding: 5%;
-        padding-bottom: 3%;
+        letter-spacing: .1px;
+        line-height: 1.25;
+        padding: 4% 4% 0 4%;
 }
     .tooltips {
         position: relative;
         display: inline-block;
         border-bottom: 1px dotted black; 
         z-index: 1;
-        font-family: Helvetica; 
+        font-family: 'Helvetica'; 
         font-weight: 800;
+        letter-spacing: .5px;
 }
-    .tooltips .tooltiptext {
+    .tooltips .tooltip-text {
         visibility: hidden;
-        font-family: Courier New;
+        font-family: 'Helvetica';
         font-weight: 200;
-        width: 185px;
+        width: 180px;
         background-color: #4A4A4A;
         color: #fff;
         text-align: center;
-        padding: 3px;
+        padding: 5px;
+        line-height: 14px;
         border-radius: 2px;
-        font-size: 13px;
+        font-size: 11px;
         /* Position for tooltip text*/
         position: absolute;
         z-index: 1;
         bottom: 100%;
 }
-    .tooltips:hover .tooltiptext {
+    .tooltips:hover .tooltip-text {
         visibility: visible;
         margin-bottom: 5px;
 }
-    .tooltip .tooltiptext::after {
+    .tooltip .tooltip-text::after {
         content: " ";
         position: absolute;
         top: 100%; /* At the bottom of the tooltip */

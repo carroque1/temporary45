@@ -1,7 +1,6 @@
 window.onload=printQuote;
 var timer = window.setInterval(printQuote, 7500);
 var timerEnabled = true;
-$('.printQuote').fadeIn(1000);
 
 //quote data
 		var quotes=[
@@ -276,7 +275,7 @@ $('.printQuote').fadeIn(1000);
 	    	link: ""
 	    },
 	   	{
-	    	quote:"\"I love all people -- rich or poor -- but in those particular positions, I just don't want a poor person.\"",
+	    	quote:"\"I love all people - rich or poor - but in those particular positions, I just don't want a poor person.\"",
 	    	source: "Campaign Rally (Cedar Rapids, IA), 2017",
 	    	link: ""
 	    },
@@ -321,11 +320,6 @@ $('.printQuote').fadeIn(1000);
 	    	link: "https://www.nytimes.com/2016/10/08/us/donald-trump-tape-transcript.html"
 		},
 		{
-			quote:"\"But regardless of recommendation, I was going to fire Comey knowing there was no good time to do it.\"",
-	    	source: "NBC Interview with Lester Holt, 2017",
-	    	link: "http://www.nbcnews.com/news/us-news/trump-reveals-he-asked-comey-whether-he-was-under-investigation-n757821"
-		},
-		{
 			quote:"\"This is infinity here. It could be infinity. We don’t really don’t know. But it could be. It has to be something — but it could be infinity, right?\"",
 	    	source: "Reinstatement of National Space Council, 2017",
 	    	link: "https://www.whitehouse.gov/the-press-office/2017/06/30/remarks-president-signing-executive-order-national-space-council"
@@ -340,7 +334,16 @@ $('.printQuote').fadeIn(1000);
 	    	source: "Twitter, 2012",
 	    	link: "https://twitter.com/realdonaldtrump/status/250975772083380226"
 		},
-
+		{
+			quote:"\"Be prepared, there is a small chance that our horrendous leadership could unknowingly lead us into World War III.\"",
+	    	source: "Twitter, 2013",
+	    	link: "https://twitter.com/realdonaldtrump/status/373743492151136256"
+		},
+		{
+			quote: "\"When Mexico sends its people, they're not sending their best. They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people.\""
+			source:"Presidential Announcement, 2015",
+	    	link: "http://time.com/3923128/donald-trump-announcement-speech/"
+		},
 	];
 
 // Stores indices for used quotes
@@ -373,8 +376,6 @@ if(usedQuote.citation !== undefined) {
 
 newHTML += '</h3>';
   document.getElementById('quote-box').innerHTML = newHTML;
-
-$('.printQuote').fadeOut(1000);
 
 }
 
