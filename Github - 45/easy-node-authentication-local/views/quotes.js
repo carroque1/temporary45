@@ -345,24 +345,24 @@ var timerEnabled = true;
 	    	link: "https://twitter.com/realdonaldtrump/status/373743492151136256"
 		},
 		{
-			quote: "\"When Mexico sends its people, they're not sending their best. They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people.\""
+			quote: "\"When Mexico sends its people, they're not sending their best. They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people.\"",
 			source: "Presidential Announcement, 2015",
 	    	link: "http://time.com/3923128/donald-trump-announcement-speech/"
 		},
 		{
-			quote: "\"What a Crowd! What a turnout!\""
+			quote: "\"What a Crowd! What a turnout!\"",
 			source: "Hurricane Harvey visit (Corpus Christi, TX), 2017",
 	    	link: "https://www.youtube.com/watch?v=UmcV8v8iboE"
 		},
 		{
-			quote: "\"[Hurricane Irma] looks like it could be something that will be not good. Believe me, not good.\""
+			quote: "\"[Hurricane Irma] looks like it could be something that will be not good. Believe me, not good.\"",
 			source: "White House, 2017",
 	    	link: "http://thehill.com/homenews/administration/349422-trump-on-hurricane-irma-not-good"
 	    },
 	    {
-			quote: "\"Windmills are the greatest threat in the US to both bald and golden eagles. Media claims fictional ‘global warming’ is worse.\""
+			quote: "\"Windmills are the greatest threat in the US to both bald and golden eagles. Media claims fictional ‘global warming’ is worse.\"",
 			source: "Twitter, 2014",
-	    	link: "https://twitter.com/realdonaldtrump/status/509436043368873984?lang=en"
+	    	link: "https://twitter.com/realdonaldtrump/status/509436043368873984"
 	    },
 
 	];
