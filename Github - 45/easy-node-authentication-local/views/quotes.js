@@ -245,7 +245,7 @@ var timerEnabled = true;
 	    	link: "https://twitter.com/realdonaldtrump/status/478018343967162369"
 	    },
 	    {
-	    	quote:"\"I would like to extend my best wishes to all, even the haters and losers, on this special date, September 11th.\","	    	
+	    	quote:"\"I would like to extend my best wishes to all, even the haters and losers, on this special date, September 11th.\"",	    	
 	    	source: "Twitter, 2013",
 	    	link: "https://twitter.com/realDonaldTrump/status/377947866641485824"
 	    },
