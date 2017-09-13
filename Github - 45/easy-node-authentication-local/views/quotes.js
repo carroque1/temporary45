@@ -242,22 +242,27 @@ var timerEnabled = true;
 	    {
 	    	quote:"\"I would like to wish all fathers, even the haters and losers, a very happy Fathers Day.\"",
 	    	source: "Twitter, 2014",
-	    	link: ""
+	    	link: "https://twitter.com/realdonaldtrump/status/478018343967162369"
+	    },
+	    {
+	    	quote:"\"I would like to extend my best wishes to all, even the haters and losers, on this special date, September 11th.\","	    	
+	    	source: "Twitter, 2013",
+	    	link: "https://twitter.com/realDonaldTrump/status/377947866641485824"
 	    },
 	   	{
 	    	quote:"\"Do you think Putin will be going to The Miss Universe Pageant in November in Moscow - if so, will he become my new best friend?\"",
 	    	source: "Twitter, 2013",
-	    	link: ""
+	    	link: "https://twitter.com/realdonaldtrump/status/347191326112112640"
 	    },
 	   	{
 	    	quote:"\"The Panama Canal is doing quite well...and also, friendship with the president is very, very good.\"",
 	    	source: "Meeting the Panamanian President, 2017",
-	    	link: ""
+	    	link: "https://www.whitehouse.gov/the-press-office/2017/06/19/remarks-president-trump-and-president-juan-carlos-varela-panama-during"
 	    },
 	  	{
 	    	quote:"\"That’s it, bye-bye. Wave goodbye. What a mess.\"",
 	    	source: "Press Conference (Cincinnati, OH), 2017",
-	    	link: ""
+	    	link: "https://twitter.com/dcexaminer/status/872507551216226305"
 	    },
 	   	{
 	    	quote:"\"If I had been the son of a coal miner, I would have left the damn mines. But most people don’t have the imagination — or whatever — to leave their mine. They don’t have “it.”.\"",
@@ -267,17 +272,17 @@ var timerEnabled = true;
 	   	{
 	    	quote:"\"Your reputation is amazing. I will not let you [Alex Jones] down.\"",
 	    	source: "Infowars.com interview with Alex Jones, 2015",
-	    	link: ""
+	    	link: "http://www.cnn.com/2015/12/02/politics/donald-trump-praises-9-11-truther-alex-jones/index.html"
 	    },
 	   	{
 	    	quote:"\"We're thinking about building the wall as a solar wall...Pretty good imagination, right? Good? My idea.\"",
 	    	source: "Campaign Rally (Cedar Rapids, IA), 2017",
-	    	link: ""
+	    	link: "http://fortune.com/2017/06/23/fact-checking-donald-trump-solar-powered-wall/"
 	    },
 	   	{
 	    	quote:"\"I love all people - rich or poor - but in those particular positions, I just don't want a poor person.\"",
 	    	source: "Campaign Rally (Cedar Rapids, IA), 2017",
-	    	link: ""
+	    	link: "http://www.cnn.com/2017/06/22/politics/donald-trump-poor-person-cabinet/index.html"
 	    },
 	   	{
 	    	quote:"\"I have a son. He's 10 years old. He has computers. He is so good with these computers, it's unbelievable. The security aspect of cyber is very, very tough.\"",
@@ -341,9 +346,25 @@ var timerEnabled = true;
 		},
 		{
 			quote: "\"When Mexico sends its people, they're not sending their best. They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people.\""
-			source:"Presidential Announcement, 2015",
+			source: "Presidential Announcement, 2015",
 	    	link: "http://time.com/3923128/donald-trump-announcement-speech/"
 		},
+		{
+			quote: "\"What a Crowd! What a turnout!\""
+			source: "Hurricane Harvey visit (Corpus Christi, TX), 2017",
+	    	link: "https://www.youtube.com/watch?v=UmcV8v8iboE"
+		},
+		{
+			quote: "\"[Hurricane Irma] looks like it could be something that will be not good. Believe me, not good.\""
+			source: "White House, 2017",
+	    	link: "http://thehill.com/homenews/administration/349422-trump-on-hurricane-irma-not-good"
+	    },
+	    {
+			quote: "\"Windmills are the greatest threat in the US to both bald and golden eagles. Media claims fictional ‘global warming’ is worse.\""
+			source: "Twitter, 2014",
+	    	link: "https://twitter.com/realdonaldtrump/status/509436043368873984?lang=en"
+	    },
+
 	];
 
 // Stores indices for used quotes

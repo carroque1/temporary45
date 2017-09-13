@@ -17,4 +17,4 @@ ___
 	- sudo git pull origin master
 
 - ssh -i ~/Desktop/administrator-key-pair-uswest2.pem ec2-user@13.58.146.79
-- ssh -i ~/Desktop/administrator-key-pair-useast2.pem ec2-user@18.220.54.255 (new)
+- ssh -i ~/Desktop/administrator-key-pair-useast2.pem ec2-user@18.220.237.91 (new)
